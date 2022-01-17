@@ -47,8 +47,33 @@
 									<span class="date">January, 2022</span>
 									<h1>One-Shot Learning with<br>Siamese Network</h1>
 								</header>
+								<h2>
+									Description:<br>									
+								</h2>
+								<p>									
+									It is a directed research project in the domain of machine learning and computer vision for object re-identification (vehicle re-identification, person re-identification). The proposed novel model identifies the person using Siamese Network and Normalized Cross-Correlation (NCC).<br>
+									In deep learning, useful features are extracted from images using the convolution operations so that a model can predict with high accuracy. Similarly, NCC is a method used in template matching which also tries to match patterns of a feature. The input energy is very large initially, which is handled by scaling it between -1 and 1 in NCC.<br>
+								</p>
 								<div class="image main"><img src="images/1112.jpg" alt="" /></div>
 								<div class="image main"><img src="images/1113.jpg" alt="" /></div>
+								
+								<h2>Methodology:<br></h2>
+
+								<p>
+									The project aimed to build a model that would implement a person re-identification task using a deep neural network. Given a pair of images as inputs to the network the task is to distinguish the images representing the same person or object or different.<br>
+
+									Using Siamese Network with triplet loss is a widespread norm where the object re-identification task is treated as a binary classification problem. In this project, the similarity function is replaced with NCC, and the output value is between 0 & 1. In an ideal case scenario, two different objects will be close to 0 and the same objects will be close to 1. NCC can compare metrics with different value ranges and give a value between -1 and 1; in theory, -1 for different objects and 1 for the same object.<br>
+									NCC compared embedding vectors that were derived from the Siamese Network. One image produced one embedding vector of 1 x 1024 shape. To filter the brightness issue, we normalized the embedding vector by subtracting the mean of the whole embedding vector and dividing it by the standard deviation of the same vector. <br>
+								</p>
+								<h2>Used tools & techniques</h2>
+								<p>
+									1. Python<br>
+									2. PyTorch<br>
+									3. OpenCV<br>
+									4. Matplolib<br>
+									5. Tensorboard<br>
+									
+								</p>
 
 							</section>
 
