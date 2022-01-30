@@ -49,13 +49,24 @@
 									<p>A Capstone project in my senior year that originated from the idea to assist people with hearing disabilities who have hard time to communicate with regular people. An Web App that can read hand signs in real time, recognize it, and outputs complete senteces through voice API. It is a
 									cost-efficient user friendly app that can help the communication barrier between deaf people and people who don't know hand signs.</p>
 								</header>
-								<div class="image main"><img src="images/pic01.jpg" alt="" /></div>
+								<div class="image main"><img src="images/asl.png" alt="" /></div>
 	<!--						<h1>h1</h1>
 								<h2>h2</h2>
 								<h4>h4</h4>
 								<h5>h5</h5>
 								<h6>h6</h6>
-	 -->						<h3>Requirements:</h3>
+	 -->						
+								<h3>Model and Dataset:</h3>
+								<p>Used deep learning model MobileNet. Tried to use VGG16 first, but it is a huge framwork with approximately 17 milliion parameters (comparatively MobilNet has around 4 million) and it slows down the processing time. Transfer Learning technique helped to incorporate IMAGENET's weights and biases into the MobileNet.</p>
+								<p>ASL American Sign Language dataset was taken from Kaggle. The models was first trained in Kaggle and then the dataset was transfered to Colab to train the model again. </p>
+								<h3>Methodology:<br></h3>
+								<p>
+									This project combined Deep Learning (DL) with Computer Vision to detect hand signs in real-time using a laptop’s webcam and aid deaf people to communicate with regular people. I worked on the DL part to find a model that would fit the project. The DL portion of the project required many trial and error runs with various models, batch sizes, activations, optimizers, and loss functions. To make it laptop-oriented, I had to discard VGG16 because it proved to slow down the processing time (approximately 17 million parameters). MobileNet solved the delay in processing time (approximately 4.5 million parameters). With the help of Transfer Learning, I incorporated IMAGENET’s weights and biases into MobileNet. <br>
+									In training, many layers were frozen in between the input layer and the final layer to increase the test accuracy. Still, the most effective method was using transfer learning to incorporate IMAGENET’s weights and biases. 
+
+									
+								</p>
+								<h3>Tools:</h3>
 								<p> 1. Python <br>
 								    2. Flask <br>
 								    3. TensorFlow <br>
@@ -65,9 +76,6 @@
 								    7. Colab <br>
 								    8. Google text-to-speech API <br>
 								</p>
-								<h3>Model and Dataset:</h3>
-								<p>Used deep learning model MobileNet. Tried to use VGG16 first, but it is a huge framwork with approximately 17 milliion parameters (comparatively MobilNet has around 4 million) and it slows down the processing time. Transfer Learning technique helped to incorporate IMAGENET's weights and biases into the MobileNet.</p>
-								<p>ASL American Sign Language dataset was taken from Kaggle. The models was first trained in Kaggle and then the dataset was transfered to Colab to train the model again. </p>
 							</section>
 
 					</div>
