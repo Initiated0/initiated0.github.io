@@ -3,52 +3,89 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>PhD Student Website</title>
-  <link rel="stylesheet" href="css/style.css" />
+  <title>Profile | Mojan Javaheripi Style</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <!-- Sidebar with social links and about section -->
-  <nav class="sidebar">
-    <img src="images/profile.jpg" alt="Profile Picture" class="profile-pic" />
-    <div class="about">
-      <h2>About Me</h2>
-      <p>Your brief bio goes here.</p>
-    </div>
-    <ul class="social-links">
-      <li><a href="https://linkedin.com/in/your-profile" target="_blank">LinkedIn</a></li>
-      <li><a href="https://github.com/your-profile" target="_blank">GitHub</a></li>
-      <li><a href="https://twitter.com/your-profile" target="_blank">Twitter</a></li>
-      <li><a href="https://facebook.com/your-profile" target="_blank">Facebook</a></li>
-      <li><a href="mailto:your-email@example.com">Email</a></li>
-    </ul>
-  </nav>
-
-  <!-- Navigation bar -->
-  <header>
-    <div class="navbar">
-      <a href="index.html">Home</a>
-      <a href="about/about.html">About</a>
-      <a href="projects/projects.html">Projects</a>
-      <a href="contact/contact.html">Contact</a>
-      <button class="menu-toggle">Menu</button>
+  <header class="navbar">
+    <div class="container">
+      <h1 class="logo">Your Name</h1>
+      <nav>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#research">Research</a></li>
+          <li><a href="#publications">Publications</a></li>
+          <li><a href="#awards">Awards</a></li>
+        </ul>
+      </nav>
     </div>
   </header>
 
-  <!-- Main content area -->
-  <main>
-    <section class="content">
-      <h1>Welcome to My Website</h1>
-      <p>This center page provides key information about my work and interests.</p>
+  <main class="container">
+    <section class="about" id="home">
+      <img src="profile.jpg" alt="Profile" class="profile-pic" />
+      <div class="bio">
+        <h2>About Me</h2>
+        <p>
+          I am a [Your Title] working on [Your Research Area]. My interests lie in enhancing [LLMs / Relevant Focus Area] through [data sources, training, model architectures, etc.].
+        </p>
+        <p>
+          I hold a Ph.D. in [Field] from [University], where I was advised by [Advisor Name]. My thesis focused on [summary].
+        </p>
+        <div class="links">
+          <a href="#" class="button">Email</a>
+          <a href="#" class="button">CV</a>
+          <a href="#" class="button">LinkedIn</a>
+          <a href="#" class="button">Google Scholar</a>
+          <a href="#" class="button">Twitter</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="news">
+      <h2>News</h2>
+      <ul>
+        <li><strong>Recent Publication:</strong> Title of paper in <em>Journal Name</em>.</li>
+        <li>Gave a talk at [Conference/Event Name] on [Topic].</li>
+        <li>Blog post: <a href="#">Title of blog</a>.</li>
+      </ul>
+    </section>
+
+    <section class="research" id="research">
+      <h2>Research</h2>
+      <p>
+        My research addresses efficiency, robustness, and privacy in deep learning under real-world constraints.
+      </p>
+      <ul>
+        <li>Deep Learning on Constrained Platforms</li>
+        <li>AutoML & Neural Architecture Search</li>
+        <li>Hardware/Algorithm Co-design</li>
+        <li>Robust Deep Learning</li>
+        <li>Privacy-preserving Machine Learning</li>
+      </ul>
+    </section>
+
+    <section class="experience">
+      <h2>Experience</h2>
+      <ul>
+        <li><strong>Senior Researcher</strong> – [Company], Jan 2023 – Present</li>
+        <li><strong>Research Intern</strong> – [Company], [Dates]</li>
+        <li><strong>Research Assistant</strong> – [University], [Dates]</li>
+      </ul>
+    </section>
+
+    <section class="education">
+      <h2>Education</h2>
+      <ul>
+        <li><strong>Ph.D.</strong> in [Field], [University], [Year]</li>
+        <li><strong>M.Sc.</strong> in [Field], [University], [Year]</li>
+        <li><strong>B.Sc.</strong> in [Field], [University], [Year]</li>
+      </ul>
     </section>
   </main>
 
-  <!-- Responsive menu script -->
-  <script>
-    const menuToggle = document.querySelector('.menu-toggle');
-    const navbar = document.querySelector('.navbar');
-    menuToggle.addEventListener('click', () => {
-      navbar.classList.toggle('responsive');
-    });
-  </script>
+  <footer>
+    <p>&copy; 2025 Your Name</p>
+  </footer>
 </body>
 </html>
