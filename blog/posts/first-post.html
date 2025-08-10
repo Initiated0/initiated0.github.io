@@ -1,41 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Hello World — Your Name</title>
-  <link rel="icon" href="../../assets/icons/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../../assets/css/main.css" />
 </head>
 <body>
   <header class="site-header">
-    <div class="container header-inner">
-      <a class="brand" href="../../index.html"><span class="brand__logo" aria-hidden="true">∑</span><span class="brand__text">Your Name</span></a>
-      <nav class="site-nav" aria-label="Breadcrumb">
-        <ul class="nav-list">
-          <li><a class="nav-link" href="../index.html">← All posts</a></li>
-        </ul>
-      </nav>
-    </div>
+    <nav class="nav container" aria-label="Breadcrumb">
+      <a class="nav__brand" href="../../index.html">Your Name</a>
+      <ul class="nav__list" style="display:flex;gap:.75rem;">
+        <li><a class="nav__link" href="../index.html">← All posts</a></li>
+      </ul>
+    </nav>
   </header>
-  <main class="section">
-    <div class="container">
-      <article class="card">
-        <header>
-          <h1 class="card__title">Hello World</h1>
-          <p class="muted small">Published on Aug 10, 2025</p>
-        </header>
-        <p class="card__desc">
-          This is a starter post. Replace this content with your thoughts on research, engineering,
-          or notes you want to remember.
-        </p>
-        <p>You can add code samples, images, and links. Keep posts short and focused for recruiters.</p>
-      </article>
-    </div>
+  <main class="section container">
+    <article>
+      <h1 class="h2">Hello World</h1>
+      <p class="muted small">Published on Aug 10, 2025</p>
+      <p>This is a starter post. Replace this with your weekly note.</p>
+    </article>
   </main>
   <footer class="site-footer">
-    <div class="container footer-inner">
-      <p class="muted small">© <span id="year"></span> Your Name.</p>
+    <div class="container footer__inner">
+      <p class="muted small">© <span id="year"></span> Your Name</p>
     </div>
   </footer>
   <script src="../../assets/js/main.js"></script>
