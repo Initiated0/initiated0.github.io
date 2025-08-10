@@ -1,8 +1,0 @@
-Link : https://www.youtube.com/watch?v=r4RQ38EoLds
-
-1. create html doctype
-2. go to formsubmit.co
-3. copy the form 
-4. inside body tag paste the form and change email address
-5. method should be "POST"
-6. reply to is in the documentation of Formsubmit

@@ -1,3 +1,3 @@
-# Initiated0.github.io
-
-I am a CS major and I have a knack for being curious. I have ambitious goals and always try to push the limits. I am always open to new ideas and possibilities with great enthusiasm. Solving problems and working towards my goals is something that I enjoy very much. 
+# Personal Portfolio (GitHub Pages Ready)
+File structure, customization notes, and GitHub Pages deployment instructions are included here.
+See index.html and assets/css/main.css for detailed inline documentation.
